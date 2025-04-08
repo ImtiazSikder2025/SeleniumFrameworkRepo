@@ -23,6 +23,7 @@ public class TC_RF_001 {
 	@BeforeMethod
 	public void setup() throws Exception {
 
+		//Browser setup
 		String browserName="firefox";
 		
 		if(browserName.equals("chrome")) {
