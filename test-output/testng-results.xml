@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-07T20:29:28 EDT" name="Default suite" finished-at="2025-04-07T20:29:56 EDT" duration-ms="27879">
+  <suite started-at="2025-04-08T21:02:51 EDT" name="Default suite" finished-at="2025-04-08T21:03:23 EDT" duration-ms="32573">
     <groups>
     </groups>
-    <test started-at="2025-04-07T20:29:28 EDT" name="Default test" finished-at="2025-04-07T20:29:56 EDT" duration-ms="27879">
-      <class name="com.register.TC_RF_004">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.register.TC_RF_004@2e6a8155]" started-at="2025-04-07T20:29:28 EDT" name="setup" finished-at="2025-04-07T20:29:55 EDT" duration-ms="27218" status="PASS">
+    <test started-at="2025-04-08T21:02:51 EDT" name="Default test" finished-at="2025-04-08T21:03:23 EDT" duration-ms="32573">
+      <class name="com.register.TC_RF_005">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.register.TC_RF_005@4d5650ae]" started-at="2025-04-08T21:02:51 EDT" name="setup" finished-at="2025-04-08T21:03:20 EDT" duration-ms="28934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyWithoutProvidingAnyFields()[pri:0, instance:com.register.TC_RF_004@2e6a8155]" started-at="2025-04-07T20:29:55 EDT" name="verifyWithoutProvidingAnyFields" finished-at="2025-04-07T20:29:56 EDT" duration-ms="614" status="PASS">
+        <test-method signature="verifyYesLetterIsSelectedForNewsLetter()[pri:0, instance:com.register.TC_RF_005@4d5650ae]" started-at="2025-04-08T21:03:20 EDT" name="verifyYesLetterIsSelectedForNewsLetter" finished-at="2025-04-08T21:03:23 EDT" duration-ms="3571" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWithoutProvidingAnyFields -->
-      </class> <!-- com.register.TC_RF_004 -->
+        </test-method> <!-- verifyYesLetterIsSelectedForNewsLetter -->
+      </class> <!-- com.register.TC_RF_005 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
