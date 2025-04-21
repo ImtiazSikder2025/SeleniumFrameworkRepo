@@ -15,9 +15,9 @@ import org.testng.annotations.Test;
 
 import com.utils.CommonUtilities;
 
-public class TC_RF_005 {
+public class TC_RF_006 {
 
-WebDriver driver;
+	WebDriver driver;
 	
 	@BeforeMethod
 	public void setup() throws Exception {
@@ -58,9 +58,9 @@ WebDriver driver;
 	
 	
 	
-	//Verify Registering an account when 'Yes' option is selected for NewsLetter field
+	//Verify Registering an account when 'No' option is selected for NewsLetter field
 	@Test
-	public void verifyYesLetterIsSelectedForNewsLetter() {
+	public void verifyNoLetterIsSelectedForNewsLetter() {
 		
 		driver.findElement(By.name("firstname")).sendKeys("Bret");
 		driver.findElement(By.name("lastname")).sendKeys("Hart");
@@ -70,13 +70,9 @@ WebDriver driver;
 		driver.findElement(By.name("confirm")).sendKeys("pppppp");
 		driver.findElement(By.name("agree")).click();
 		
-		//Clicking on 'Yes' option for NewsLetter
-		driver.findElement(By.xpath("//input[@name='newsletter' and @value='1']")).click();
+		//Clicking on 'No' option for NewsLetter
+		driver.findElement(By.xpath("//input[@name='newsletter' and @value='0']")).click();
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
-		
-		
-		
-		
 		
 		String expectedText="Your Account Has Been Created!";
 		String actualText=driver.findElement(By.xpath("//h1[text()='Your Account Has Been Created!']")).getText();
@@ -85,20 +81,9 @@ WebDriver driver;
 		boolean flag=driver.findElement(By.xpath("//a[text()='Success']")).isDisplayed();
 		Assert.assertTrue(flag);
 		
-		//Clicking on 'Continue' button
-		driver.findElement(By.xpath("//a[text()='Continue']")).click();		
-		//Verify User should be taken to Account page
-		String expectedHeading="My Account";
-		String actualHeading=driver.findElement(By.xpath("//h2[text()='My Account']")).getText();
-		Assert.assertEquals(actualHeading, expectedHeading);
 		
-		//Clicking on 'Subscribe / unsubscribe' option
-		driver.findElement(By.xpath("//a[text()='Subscribe / unsubscribe to newsletter']")).click();
-		//Verify 'Yes' option is selected by default in the NewsLetter page
-		boolean yesSelected=driver.findElement(By.xpath("//input[@name='newsletter' and @value='1']")).isSelected();
-		Assert.assertTrue(yesSelected);
+	}
 		
 	
-	}
 	
 }
