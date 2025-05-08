@@ -13,11 +13,9 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.utils.CommonUtilities;
-//Register functionalities
-public class TC_RF_001 {
-	
+
+public class TC_RF_001 {	
 	WebDriver driver;
 	
 	@BeforeMethod
