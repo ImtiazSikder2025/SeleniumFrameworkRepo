@@ -55,7 +55,7 @@ public class TC_RF_001 {
 	
 	
 	
-	
+	//Verify Registering an account
 	@Test
 	public void verifyRegisteringByProvidingOnlyMandatoryFields() throws Exception {
 		// Verify Registering an account by providing only mandatory fields	
